@@ -121,6 +121,8 @@ export function initializePanelManager() {
                 if ('ontouchstart' in window) {
                     stopAssetPlaceholderAnimation();
                 }
+            } else {
+                 mobilePanel.classList.add('visible'); // Panel is open
             }
             // else: Leave the panel at its new height. The inline styles remain.
         }

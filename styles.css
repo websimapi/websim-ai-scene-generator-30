@@ -472,6 +472,8 @@ button:hover {
     color: var(--text-color);
     line-height: 30px; /* Vertically center in the 30px handle */
     pointer-events: none; /* Make sure it doesn't interfere with dragging */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .mobile-resize-handle {
@@ -566,5 +568,9 @@ button:hover {
 
     #mobile-panel-toggles {
         display: none;
+    }
+    
+    #mobile-panel.visible #mobile-asset-type-label {
+        opacity: 1;
     }
 }
