@@ -33,7 +33,7 @@
             <button id="toggle-left-panel" class="panel-toggle" title="Hide Panel"><img src="hide_icon.png" alt="Hide"></button>
             
             <div class="control-group">
-                <label id="mobile-asset-type-label"></label>
+                
                 <div class="input-with-icon">
                     <input type="text" id="asset-prompt" placeholder="Type here to generate asset">
                     <button id="asset-transparent-toggle" class="transparent-toggle" title="Toggle Transparent Background">
@@ -58,7 +58,9 @@
             <canvas id="editor-canvas"></canvas>
         </div>
         <div id="mobile-panel">
-            <div class="mobile-resize-handle"></div>
+            <div class="mobile-resize-handle">
+                <label id="mobile-asset-type-label"></label>
+            </div>
             <div id="mobile-panel-content">
                 <div id="mobile-left-panel-content">
                     <!-- left panel content will be moved here by JS -->

@@ -465,11 +465,13 @@ button:hover {
 
 #mobile-asset-type-label {
     display: none;
-    margin: 0 0 4px 0;
-    padding: 0;
-    font-size: 0.9em;
+    margin: 0;
+    padding: 0 10px; /* Give it some space from the edge */
+    font-size: 0.8em; /* Smaller text */
     font-weight: bold;
     color: var(--text-color);
+    line-height: 30px; /* Vertically center in the 30px handle */
+    pointer-events: none; /* Make sure it doesn't interfere with dragging */
 }
 
 .mobile-resize-handle {
